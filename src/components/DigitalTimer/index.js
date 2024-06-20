@@ -33,8 +33,8 @@ class DigitalTimer extends Component {
     }))
 
   renderTimerLimitController = () => {
-    const {timerLimitInMinutes, timerElapsedInSeconds} = this.state
-    const isButtonsDisabled = timerElapsedInSeconds > 0
+    const {timerLimitInMinutes, timeElapsedInSeconds} = this.state
+    const isButtonsDisabled = timeElapsedInSeconds > 0
 
     return (
         <div className='timer-limit-controller-container'>
